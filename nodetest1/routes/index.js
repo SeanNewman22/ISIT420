@@ -6,6 +6,7 @@ router.get('/', function(req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+//this route should console log our 5 variables that are declared in main.js
 router.post('/', function(req, res) {
   
 });
