@@ -29,8 +29,43 @@ createButton.addEventListener('click',function(){
 });
 
 //this event is supposed to make an ajax call to our server .post route passing our 5 values populated by the above event
-submitButton.addEventListener('click',function(){
-    
+/* submitButton.addEventListener('click',function(){
+    var formData = {
+        'storeNumber': storeNumber,
+        'salesPersonID': salesPersonID,
+        'itemNumber': itemNumber,
+        'timePurch': timePurch,
+        'pricePaid': pricePaid
+    };
+
+    $.ajax({
+        url: '/',
+        data: formData,
+        dataType:'JSON',
+        type:'POST',
+    });
+
+    event.preventDefault();
+
+}); */
+
+$("#simpleform").on("submit", function(event) {
+    var formData = {
+        'storeNumber': storeNumber,
+        'salesPersonID': salesPersonID,
+        'itemNumber': itemNumber,
+        'timePurch': timePurch,
+        'pricePaid': pricePaid
+    };
+
+    $.ajax({
+        url: '/',
+        data: formData,
+        dataType:'JSON',
+        type:'POST',
+    });
+
+    event.preventDefault();
 });
 
 //this function creates new values for all 5 variables

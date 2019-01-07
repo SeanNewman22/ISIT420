@@ -8,7 +8,8 @@ router.get('/', function(req, res) {
 
 //this route should console log our 5 variables that are declared in main.js
 router.post('/', function(req, res) {
-  
+  console.log("hi");
+  console.log(req.formData.storeNumber);
 });
 
 module.exports = router;
