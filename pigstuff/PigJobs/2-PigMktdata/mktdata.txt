@@ -1,0 +1,6 @@
+Sales, John, 65000.00, 35
+Sales, Mary, 73500.00, 42
+Sales, Tom, 70600.00, 33
+Marketing, Sue, 54700.00, 64
+Marketing, Alice, 63750.00, 31
+Marketing, Ben, 55600.00, 29

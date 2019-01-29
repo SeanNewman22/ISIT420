@@ -1,0 +1,17 @@
+Pig Stack Trace
+---------------
+ERROR 1066: Unable to open iterator for alias OrderCnt
+
+org.apache.pig.impl.logicalLayer.FrontendException: ERROR 1066: Unable to open iterator for alias OrderCnt
+	at org.apache.pig.PigServer.openIterator(PigServer.java:1019)
+	at org.apache.pig.tools.grunt.GruntParser.processDump(GruntParser.java:747)
+	at org.apache.pig.tools.pigscript.parser.PigScriptParser.parse(PigScriptParser.java:376)
+	at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:231)
+	at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:206)
+	at org.apache.pig.tools.grunt.Grunt.exec(Grunt.java:81)
+	at org.apache.pig.Main.run(Main.java:630)
+	at org.apache.pig.Main.main(Main.java:176)
+Caused by: java.io.IOException: Job terminated with anomalous status FAILED
+	at org.apache.pig.PigServer.openIterator(PigServer.java:1011)
+	... 7 more
+================================================================================
